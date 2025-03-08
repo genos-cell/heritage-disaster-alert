@@ -1,0 +1,36 @@
+<head>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heritage Disaster Alert</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    </head>
+    <body>
+    
+        <h1> Heritage Disaster Alert</h1>
+        
+        <label for="heritageSelect">Pilih Warisan Budaya:</label>
+        <select id="heritageSelect">
+            <option value="-7.8014,110.3646">🏰 Benteng Vredeburg (Yogyakarta)</option>
+            <option value="-6.9703,110.4101">🏛 Lawang Sewu (Semarang)</option>
+            <option value="-7.6079,110.2035">🏯 Candi Borobudur (Magelang)</option>
+            <option value="-8.4095,115.1889">⛩ Pura Besakih (Bali)</option>
+            <option value="-8.7191,115.1670">🏝 Tanah Lot (Bali)</option>
+            <option value="-8.3405,115.0919">🕌 Pura Ulun Danu Beratan (Bali)</option>
+        </select>
+        
+    <button id="checkButton">Cek Kondisi</button>
+    
+        <h2>⚠ Peringatan:</h2>
+        <div id="alertBox"></div>
+        <div id="weatherInfo"></div>
+    
+        <h2>📍 Lokasi di Peta:</h2>
+        <div id="map"></div>
+    
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script src="script.js"></script>
+    </body>
+    </html>
